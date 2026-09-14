@@ -308,7 +308,7 @@ export function getBlockSpriteStyle(paletteId, layer, targetSize = 16) {
   if (!frameInfo || !frameInfo.frame) return null;
 
   const f = frameInfo.frame;
-  const imageUrl = '/pixelwalker-assets/atlases/blocks.png';
+  const imageUrl = LOCAL_IMG_URL;
   const ratio = targetSize / 16;
   const rx = Math.round(f.x * ratio);
   const ry = Math.round(f.y * ratio);
