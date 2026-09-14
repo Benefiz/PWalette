@@ -16,10 +16,11 @@ const ATLAS_OVERRIDES = {
 // Map to cache resolved frame names for each PaletteId
 const blockSpriteCache = new Map();
 
+const BASE_PATH = import.meta.env.BASE_URL || './';
 const CACHE_NAME = 'pixelwalker-assets-cache-v1';
-const LOCAL_META_URL = '/pixelwalker-assets/atlases/blocks.json';
+const LOCAL_META_URL = BASE_PATH + 'atlases/blocks.json';
 const REMOTE_META_URL = 'https://client.pixelwalker.net/atlases/blocks.json';
-const LOCAL_IMG_URL = '/pixelwalker-assets/atlases/blocks.png';
+const LOCAL_IMG_URL = BASE_PATH + 'atlases/blocks.png';
 const REMOTE_IMG_URL = 'https://client.pixelwalker.net/atlases/blocks.png';
 
 let onUpdateCallback = null;

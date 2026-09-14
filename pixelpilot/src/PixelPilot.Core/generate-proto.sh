@@ -1,1 +1,0 @@
-﻿protoc --proto_path=Protobuf --csharp_out=Client/Messages/Packets --csharp_opt=file_extension=.g.cs ./Protobuf/world.proto
