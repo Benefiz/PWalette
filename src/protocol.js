@@ -7,7 +7,8 @@ let WorldPacket = null;
 export async function initProtocol() {
   if (root) return;
   try {
-    const response = await fetch('/world.proto');
+    const protoUrl = (import.meta.env.BASE_URL || './') + 'world.proto';
+    const response = await fetch(protoUrl);
     if (!response.ok) throw new Error('Failed to fetch world.proto');
     const protoText = await response.text();
     

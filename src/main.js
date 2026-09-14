@@ -147,7 +147,8 @@ async function initApp() {
 
   // Fetch block palette mappings
   try {
-    const res = await fetch('/blocks.json');
+    const blocksUrl = (import.meta.env.BASE_URL || './') + 'blocks.json';
+    const res = await fetch(blocksUrl);
     if (!res.ok) throw new Error('Failed to load blocks.json');
     blocksData = await res.json();
     editor.setBlocksDatabase(blocksData);
