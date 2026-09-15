@@ -38,7 +38,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/pwalette.git
+   git clone https://github.com/Benefiz/pwalette.git
    cd pwalette
    ```
 
